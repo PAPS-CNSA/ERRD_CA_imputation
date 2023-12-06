@@ -13,7 +13,7 @@ source("Fonctions.R")
 
 liste <- readRDS("G:/08. DPE/11. STATISTIQUES/12. Bases de Données/05. CA&ERRD/Donnees/brut_synthese/CAERRD_LISTE_A.rds")
 
-annees <- as.character(2017:2022)
+annees <- as.character(2017:2021)
 liste_finess <- list()
 
 for(annee in annees){
@@ -21,8 +21,6 @@ for(annee in annees){
   nom_table <- names(liste[annee])
   table <- liste[[annee]]
   table <- chargement_annee(table, annee)
-#  if(annee != "2022")
- # table <- table %>% select(-"ETP_SG")
   liste_finess[[nom_table]] <- table
 
 }
