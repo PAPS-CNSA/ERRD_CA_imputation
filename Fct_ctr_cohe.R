@@ -75,4 +75,6 @@ Ctrl_cohe <- function(type_rapport, annee, type_donnees){
     }
   }
   
+  return(df)
+  
 }
