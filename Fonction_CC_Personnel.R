@@ -1,6 +1,6 @@
 # Variables ETP et salaires
 
-CC_var_perso(df_num){
+CC_var_perso <- function(df_num){
   
 df_ETP <- df_num %>% select(FINESS, ANNEE, categetab, statut, matches("ETP"), matches("SAL"))
 

@@ -6,6 +6,7 @@ library(dplyr)
 library(tidyr)
 library(cnsa)
 library(data.table)
+library(cnsa.caerrd)
 
 source("Fonctions.R")
 
