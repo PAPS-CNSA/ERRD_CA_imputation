@@ -1,6 +1,6 @@
 ####################################################### Imputations des variables comptes de résultat ######################################################################
 
-# II. Variables comptes des charges et des produits
+# I. Variables comptes des charges et des produits
 
 table_cptes <- table_num %>% select(FINESS, ANNEE, categetab, statut, matches("Financeur"), matches("TOT"), matches("COMPTE"))
 

@@ -21,8 +21,8 @@ for(annee in annees){
   nom_table <- names(liste[annee])
   table <- liste[[annee]]
   table <- chargement_annee(table, annee)
-  if(annee != "2022")
-  table <- table %>% select(-"ETP_SG")
+#  if(annee != "2022")
+ # table <- table %>% select(-"ETP_SG")
   liste_finess[[nom_table]] <- table
 
 }
