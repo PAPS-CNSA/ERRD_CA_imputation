@@ -31,7 +31,3 @@ CC_var_compt <- function(type_rapport, annee, type_donnees){
   df_cptes_na <- df_cptes_na %>% mutate(TOT_REC_GRII = ifelse(TOT_REC_GRII == 0, NA, TOT_REC_GRII))
   
 }
-
-type_rapport = "CAERRD"
-annee = "2018"
-type_donnees = "SYNTHESE" 
